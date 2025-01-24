@@ -2,7 +2,7 @@ package TwoSeaching.Two_Binary.Questions;
 
 public class findMinimumInRotatedSortedArr {
     public static void main(String[] args) {
-        int[] arr = {3,4,5,6,1,2};
+        int[] arr = {9,10,11,12,4,5};
 
         System.out.println("Minimum Element is: " + findMinRot(arr)  );
     }
