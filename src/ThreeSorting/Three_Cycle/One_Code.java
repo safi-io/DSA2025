@@ -4,16 +4,19 @@ import java.util.Arrays;
 
 public class One_Code {
     public static void main(String[] args) {
-        int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
+        int[] arr = {1,3,2,4};
         cycleSort(arr);
         System.out.println(Arrays.toString(arr));
+
+
     }
 
     static void cycleSort(int[] array) {
         int currentIndex = 0;
 
         while (currentIndex < array.length) {
-            int correctIndex = array[currentIndex] - 1;
+            int correctIndex = array[currentIndex]-1;
+
             if (array[currentIndex] != array[correctIndex]) {
                 swap(array, currentIndex, correctIndex);
             } else {
