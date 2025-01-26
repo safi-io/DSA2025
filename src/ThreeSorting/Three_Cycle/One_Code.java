@@ -5,18 +5,19 @@ import java.util.Arrays;
 public class One_Code {
     public static void main(String[] args) {
         int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
-        sort(arr);
+        cycleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
-    static void sort(int[] arr) {
-        int i = 0;
-        while (i < arr.length) {
-            int correct = arr[i] - 1;
-            if (arr[i] != arr[correct]) {
-                swap(arr, i , correct);
+    static void cycleSort(int[] array) {
+        int currentIndex = 0;
+
+        while (currentIndex < array.length) {
+            int correctIndex = array[currentIndex] - 1;
+            if (array[currentIndex] != array[correctIndex]) {
+                swap(array, currentIndex, correctIndex);
             } else {
-                i++;
+                currentIndex++;
             }
         }
     }
