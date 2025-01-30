@@ -4,7 +4,7 @@ public class One_CustomLL {
 
     private Node head;
     private Node tail;
-    private int size;
+    static int size;
 
     public One_CustomLL() {
         this.size = 0;
@@ -53,6 +53,48 @@ public class One_CustomLL {
         Node node = new Node(value, temp.next);
         temp.next=node;
         size+=1;
+    }
+
+    public void deleteFirst() {
+        head = head.next;
+        if (head == null) {
+            tail = null;
+        }
+        size -= 1;
+
+    }
+
+    public void deleteLast() {
+        if (size <= 1) {
+            deleteFirst();
+            return;
+        }
+        Node temp = head;
+        for (int i = 1; i < size - 2; i++) {
+            temp = temp.next;
+        }
+        tail = temp.next;
+        tail.next = null;
+        size -= 1;
+    }
+
+    public void delete(int index) {
+        if (index == 0) {
+            deleteFirst();
+            return;
+        }
+        if (index == size - 1) {
+            deleteLast();
+            return;
+        }
+
+        Node temp = head;
+        for (int i = 1; i < index; i++) {
+            temp = temp.next;
+        }
+        // the next node have to be deleted
+        temp.next = temp.next.next;
+        size -= 1;
     }
 
     public void displayLL() {
