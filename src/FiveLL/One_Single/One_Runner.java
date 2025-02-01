@@ -5,15 +5,9 @@ public class One_Runner {
         One_CustomLL LL = new One_CustomLL();
 
         LL.insertFirst(1);
-        LL.insertLast(1);
-        LL.insertLast(1);
-        LL.insertLast(1);
         LL.insertLast(2);
-        LL.insertLast(2);
+        LL.insertLast(4);
 
         LL.displayLL();
-        LL.removeDuplicate();
-        LL.displayLL();
-
     }
 }

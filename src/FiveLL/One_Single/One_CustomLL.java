@@ -2,8 +2,8 @@ package FiveLL.One_Single;
 
 public class One_CustomLL {
 
-    private Node head;
-    private Node tail;
+    public Node head;
+    public Node tail;
     static int size;
 
     public One_CustomLL() {
@@ -123,9 +123,9 @@ public class One_CustomLL {
         System.out.println(tail.value);
     }
 
-    private class Node {
-        private int value;
-        private Node next;
+    public class Node {
+        public int value;
+        public Node next;
 
         public Node(int value) {
             this.value = value;
