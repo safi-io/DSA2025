@@ -16,7 +16,7 @@ public class One_CustomLL {
         head = node;
 
         if (tail == null) {
-            tail = head;
+            tail = head; // Next time, when the tail is not null, then tail will stay at previous head, which means move further
         }
 
         size += 1;
@@ -51,8 +51,8 @@ public class One_CustomLL {
         }
 
         Node node = new Node(value, temp.next);
-        temp.next=node;
-        size+=1;
+        temp.next = node;
+        size += 1;
     }
 
     public void deleteFirst() {
@@ -97,6 +97,17 @@ public class One_CustomLL {
         size -= 1;
     }
 
+    public void removeDuplicate() {
+        Node temp = head;
+        while (temp != null && temp.next != null) {
+            if (temp.value == temp.next.value) {
+                temp.next = temp.next.next;
+            } else {
+                temp = temp.next;
+            }
+        }
+    }
+
     public void displayLL() {
         Node temp = this.head;
         while (temp != null) {
@@ -105,6 +116,11 @@ public class One_CustomLL {
         }
         System.out.print("END");
         System.out.println();
+    }
+
+    public void displayTH() {
+        System.out.println(head.value);
+        System.out.println(tail.value);
     }
 
     private class Node {
