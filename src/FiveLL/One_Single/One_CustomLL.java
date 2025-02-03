@@ -123,6 +123,66 @@ public class One_CustomLL {
         System.out.println(tail.value);
     }
 
+    public void reverseBetween(int left, int right) {
+        Node prevStartIndex = null;
+        Node startIndex = null;
+        Node endIndex = null;
+        Node nextEndIndex = null;
+
+        // Traversing the Linked List
+        Node temp = head;
+        int count = 0;
+        while (temp != null) {
+            count++;
+            if ((left - 1) == count) {
+                prevStartIndex = temp;
+            } else if ((left) == count) {
+                startIndex = temp;
+            } else if ((right - 1) == count) {
+                endIndex = temp;
+            } else if (right == count) {
+                nextEndIndex = temp;
+                break;
+            }
+            temp = temp.next;
+        }
+
+        revBetween2(startIndex, prevStartIndex, endIndex, nextEndIndex);
+
+    }
+
+    public void revBetween2(Node startIndex, Node prevStartIndex, Node endIndex, Node nextEndIndex) {
+        Node current = startIndex;
+        Node prev = nextEndIndex; // Important to connect the reversed part correctly
+        Node next;
+
+        // Reverse the segment
+        while (current != nextEndIndex) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        // Reconnect the reversed part
+        if (prevStartIndex != null) {
+            prevStartIndex.next = endIndex;
+        } else {
+            head = endIndex; // Update head if reversing from the start
+        }
+    }
+
+    public void binaryToDecimal() {
+        StringBuilder s = new StringBuilder();
+        while (head != null) {
+            s.append(head.value);
+            head = head.next;
+        }
+
+        System.out.println(Integer.parseInt(s.toString(), 2));
+    }
+
+
     public class Node {
         public int value;
         public Node next;

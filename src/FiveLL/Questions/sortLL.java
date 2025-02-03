@@ -1,7 +1,7 @@
 package FiveLL.Questions;
 
 
-public class sortTLE {
+public class sortLL {
     private static ListNode createList() {
         ListNode node1 = new ListNode(10);
         ListNode node2 = new ListNode(2);
@@ -50,27 +50,56 @@ public class sortTLE {
         return length;
     }
 
-    private static void bubbleSort(int[] arr) {
-        int n = arr.length;
+    private static void mergeSort(int[] arr, int left, int right) {
+        if (left < right) {
+            int mid = left + (right - left) / 2;
+            mergeSort(arr, left, mid);  // Left Portion of Array
+            mergeSort(arr, mid + 1, right); // Right Portion of Array
 
-        for (int i = 0; i < n - 1; i++) {
-            boolean swapped = false;
-
-            for (int j = 0; j < n - i - 1; j++) { // Simplify the loop condition
-                if (arr[j] > arr[j + 1]) {
-                    // Swap adjacent elements if they are in the wrong order
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                }
-            }
-
-            if (!swapped) {
-                // If no swaps were made in the current pass, the array is sorted
-                break;
-            }
+            // Merge Sorted Halves
+            merge(arr, left, mid, right);
         }
+    }
+
+    private static void merge(int[] arr, int left, int mid, int right) {
+        int n1 = mid - left + 1;
+        int n2 = right - mid;
+
+        // Temporary Arrays
+        int[] leftArray = new int[n1];
+        int[] rightArray = new int[n2];
+
+        System.arraycopy(arr, left, leftArray, 0, n1);
+        System.arraycopy(arr, mid + 1, rightArray, 0, n2);
+
+        int i = 0;
+        int j = 0;
+        int index = left;
+
+        while (i < n1 && j < n2) {
+
+            if (leftArray[i] <= rightArray[j]) {
+                arr[index] = leftArray[i];
+                i++;
+            } else {
+                arr[index] = rightArray[j];
+                j++;
+            }
+            index++;
+        }
+
+        while (i < n1) {
+            arr[index] = leftArray[i];
+            i++;
+            index++;
+        }
+
+        while (j < n2) {
+            arr[index] = rightArray[j];
+            j++;
+            index++;
+        }
+
     }
 
     public static ListNode convertArrayToLinkedList(int[] array) {
@@ -94,7 +123,7 @@ public class sortTLE {
 
         int[] unsortedArr = convertListIntoArr(head, length);
 
-        bubbleSort(unsortedArr);
+        mergeSort(unsortedArr, 0, length - 1);
         ListNode sortedList = convertArrayToLinkedList(unsortedArr);
         displayLL(sortedList);
     }
