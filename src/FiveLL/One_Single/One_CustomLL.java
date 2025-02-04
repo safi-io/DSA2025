@@ -33,26 +33,31 @@ public class One_CustomLL {
         size += 1;
     }
 
-    public void insert(int value, int index) {
-        if (index == 0) {
-            insertFirst(value);
-            return;
-        }
-        if (index == size) {
-            insertLast(value);
-            return;
+    public void insert(int val, int index) {
+        if (index >= size) {
+            return; // Returning because index is not valid
         }
 
+        if (size == 0) { // It means that the Linked List is empty!
+            insertFirst(val);
+        }
+
+        Node toAdd = new Node(val);
         Node temp = head;
+        int count = 0;
 
+        while (temp != null) {
+            if (count == index - 1) {
+                toAdd.next = temp.next;
+                temp.next = toAdd;
+                size += 1;
+                return;
 
-        for (int i = 1; i < index; i++) {
+            }
+            count++;
             temp = temp.next;
         }
 
-        Node node = new Node(value, temp.next);
-        temp.next = node;
-        size += 1;
     }
 
     public void deleteFirst() {
@@ -182,8 +187,59 @@ public class One_CustomLL {
         System.out.println(Integer.parseInt(s.toString(), 2));
     }
 
+    public int get(int index) {
+        if (index >= size) {
+            return -1;
+        }
+        int count = 0;
+        Node temp = head;
+        while (temp != null) {
+            if (count == index) {
+                return temp.value;
+            }
+            count++;
+            temp = temp.next;
+        }
+        return 0;
+    }
 
-    public class Node {
+    public static Node sumLL(One_CustomLL LL1, One_CustomLL LL2) {
+        Node head1 = LL1.head;
+        Node head2 = LL2.head;
+
+        Node dummyNode = new Node(-1);
+        Node current = dummyNode;
+        int carry = 0;
+
+        while (head1 != null || head2 != null) {
+            int sum = 0;
+            sum += carry;
+
+            if (head1 != null) {
+                sum += head1.value;
+            }
+            if (head2 != null) {
+                sum += head2.value;
+            }
+
+            Node toAdd = new Node(sum % 10);
+            carry = sum / 10;
+            current.next = toAdd;
+            current = current.next;
+
+
+            if (head1 != null) {
+                head1 = head1.next;
+            }
+            if (head2 != null) {
+                head2 = head2.next;
+            }
+        }
+
+        return dummyNode.next;
+    }
+
+    public static class Node {
         public int value;
         public Node next;
 
