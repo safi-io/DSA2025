@@ -1,7 +1,5 @@
 package FiveLL.One_Single;
 
-import com.sun.security.jgss.GSSUtil;
-
 import static FiveLL.One_Single.One_CustomLL.sumLL;
 
 public class One_Runner {
@@ -19,7 +17,6 @@ public class One_Runner {
 
         LL1.displayLL();
         LL2.displayLL();
-
 
         One_CustomLL.Node summed = sumLL(LL1, LL2);
 
