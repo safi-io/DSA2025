@@ -8,13 +8,11 @@ public class One_Runner {
         LL1.insertFirst(1);
         LL1.insertLast(2);
         LL1.insertLast(3);
-        LL1.insertLast(3);
-        LL1.insertLast(4);
         LL1.insertLast(4);
         LL1.insertLast(5);
 
         LL1.displayLL();
-        LL1.deleteDuplicates();
+        LL1.reverseBetween(2,4);
         LL1.displayLL();
     }
 }
