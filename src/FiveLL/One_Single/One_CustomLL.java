@@ -239,6 +239,32 @@ public class One_CustomLL {
         return dummyNode.next;
     }
 
+    public Node deleteDuplicates() {
+        if(head==null) return null;
+        Node dummy = new Node(-1);
+        dummy.next = head;
+
+        Node temp = head;
+
+        while(temp.next != null) {
+            if( temp.value != temp.next.value ) {
+                temp = temp.next;
+            }else {
+                int toRemove = temp.value;
+
+                Node newTemp = temp;
+
+                while(newTemp.value == toRemove) {
+                    newTemp = newTemp.next;
+                }
+                temp.next = newTemp.next;
+
+            }
+        }
+
+        return dummy.next;
+    }
+
     public static class Node {
         public int value;
         public Node next;
