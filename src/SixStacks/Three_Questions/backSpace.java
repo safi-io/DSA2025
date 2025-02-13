@@ -15,26 +15,28 @@ public class backSpace {
 
     public static String solvedSTR(String s) {
         Stack<Character> st = new Stack<>();
-        st.push(s.charAt(0));
-        for (int i = 1; i < s.length(); i++) {
-            if (!st.isEmpty() && s.charAt(i) == '#') {
-                st.pop();
-            } else {
-                if (s.charAt(i) != '#') {
-                    st.push(s.charAt(i));
-                }
-            }
-        }
+//        st.push(s.charAt(0));
+//        for (int i = 1; i < s.length(); i++) {
+//            if (!st.isEmpty() && s.charAt(i) == '#') {
+//                st.pop();
+//            } else {
+//                if (s.charAt(i) != '#') {
+//                    st.push(s.charAt(i));
+//                }
+//            }
+//        }
+//
+//        StringBuilder sb = new StringBuilder();
+//        while (!st.isEmpty()) {
+//            if (st.peek() != '#') {
+//                sb.append(st.pop());
+//            }else {
+//                st.pop();
+//            }
+//        }
 
-        StringBuilder sb = new StringBuilder();
-        while (!st.isEmpty()) {
-            if (st.peek() != '#') {
-                sb.append(st.pop());
-            }else {
-                st.pop();
-            }
-        }
-
-        return sb.reverse().toString();
+//        return sb.reverse().toString();
+        System.out.println(st.size());
+        return ";;";
     }
 }
