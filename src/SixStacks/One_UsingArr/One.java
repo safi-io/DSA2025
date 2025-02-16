@@ -4,16 +4,16 @@ public class One {
     public static void main(String[] args) {
         StackArr stack = new StackArr(1);
 
-        stack.push(-1);
-//        stack.pop();
+        stack.push(5);
+        stack.push(10);
 
-        int ans = stack.peek();
+        System.out.println(stack.peek());
 
-        if (stack.flag) {
-            System.out.println(ans);
-        } else {
-            System.out.println("Stack is Empty");
-        }
+//        if (stack.flag) {
+//            System.out.println(ans);
+//        } else {
+//            System.out.println("Stack is Empty");
+//        }
 
 
     }
