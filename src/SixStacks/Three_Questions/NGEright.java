@@ -14,7 +14,7 @@ public class NGEright {
 
     private static int[] ngeRight(int[] arr, int[] indices) {
 
-        // Optimise it Later
+        // Optimise it Later (Can be done using Stacks)
 
         int[] result = new int[indices.length];
 
