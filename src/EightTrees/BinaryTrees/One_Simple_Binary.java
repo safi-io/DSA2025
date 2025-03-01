@@ -36,16 +36,23 @@ class BinaryTree {
 
     }
 
-    public void display() {
-        display(root, "");
+    public void printInorder() {
+        printInorder(root);
     }
 
-    private void display(Node node, String indent) {
-        if (node == null) return;
-        System.out.println(indent + node.value);
+    public void printInorder(Node node)
+    {
+        if (node == null)
+            return;
 
-        display(node.left, indent + "\t");
-        display(node.right, indent + "\t");
+        // First recur on left subtree
+        printInorder(node.left);
+
+        // Now deal with the node
+        System.out.print(node.value + "->");
+
+        // Then recur on right subtree
+        printInorder(node.right);
     }
 
     private static class Node {
@@ -63,7 +70,7 @@ public class One_Simple_Binary {
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.populate(new Scanner(System.in));
-        bt.display();
+        bt.printInorder();
 
     }
 }
