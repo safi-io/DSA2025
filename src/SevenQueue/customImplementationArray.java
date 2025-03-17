@@ -3,6 +3,8 @@ package SevenQueue;
 class customQueue {
 
     // Implementing using Arrays.
+
+    // Withdraw is wastage of memory, can be resolved using circular queue
     private int[] queue;
     private int front;
     private int rear;
