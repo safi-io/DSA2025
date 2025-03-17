@@ -23,9 +23,7 @@ public class JobSchedulingFarm {
             temp.nextJob = newJob;
             newJob.nextJob = HEAD;
         }
-
         System.out.println("Job added: ID = " + jobID + ", Name = " + jobName + ", Execution Time = " + executionTime);
-
     }
 
     // Delete a Job
@@ -128,10 +126,8 @@ public class JobSchedulingFarm {
         sc.close();
     }
 
-
     // Display Queue of Jobs
     public void display() {
-
         if (HEAD == null) {
             System.out.println("QUEUE IS EMPTY");
             return;
@@ -145,7 +141,6 @@ public class JobSchedulingFarm {
         } while (temp != HEAD);
         System.out.println("(back to HEAD)");
     }
-
 
     public static class Job {
         int jobID;
