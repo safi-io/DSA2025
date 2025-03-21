@@ -1,4 +1,4 @@
-package Assignments.One;
+package Assignments.Theory_One;
 
 import java.util.Scanner;
 

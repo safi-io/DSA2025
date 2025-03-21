@@ -1,4 +1,4 @@
-package Assignments.One;
+package Assignments.Theory_One;
 
 public class Runner {
     public static void main(String[] args) {
