@@ -79,7 +79,7 @@ public class One_Simple_Binary {
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.populate(new Scanner(System.in));
-//        bt.printInorder();  // LNR (Left Node Right)
-        System.out.println(bt.getSize( bt.getRoot() ));
+        bt.printInorder();  // LNR (Left Node Right)
+//        System.out.println(bt.getSize( bt.getRoot() ));
     }
 }
