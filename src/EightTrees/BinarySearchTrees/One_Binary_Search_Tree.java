@@ -77,7 +77,7 @@ class BinaryTree {
 
             Node successor = getSuccessor(root);
             root.data = successor.data;
-            root.right = delete(root.right ,root.data);
+            root.right = delete(root.right, root.data);
 
         }
 
@@ -92,6 +92,20 @@ class BinaryTree {
         }
 
         return current;
+    }
+
+    public void printInRange(Node root, int X, int Y) {
+        if(root==null) return;
+        if (root.data >= X && root.data <= Y) {
+            printInRange(root.left, X, Y);
+            System.out.print(root.data + " ");
+            printInRange(root.right, X, Y);
+        }
+        else if(root.data >= Y) {
+            printInRange(root.left, X, Y);
+        }else {
+            printInRange(root.right, X, Y);
+        }
     }
 
     static class Node {
@@ -119,13 +133,15 @@ public class One_Binary_Search_Tree {
             root = tree.insert(root, num);
         }
 
-        tree.inOrderTraversal(root);
+//        tree.inOrderTraversal(root);
+//        System.out.println("end");
+
+        tree.printInRange(root, 4,10);
         System.out.println("end");
-//
-        tree.delete(root, 9);
-//
-        tree.inOrderTraversal(root);
-        System.out.println("end");
+
+//        tree.delete(root, 9);
+//        tree.inOrderTraversal(root);
+//        System.out.println("end");
 
 
 //        System.out.println("Enter to Search Something: ");
