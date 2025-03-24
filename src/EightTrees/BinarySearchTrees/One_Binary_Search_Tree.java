@@ -45,27 +45,53 @@ class BinaryTree {
         }
     }
 
-    public void delete(Node root, int key) {
+    public Node delete(Node root, int key) {
         if (root == null) {
-            return;
+            return root;
         }
 
-        if ((root.left != null) && root.left.data == key) {
-            root.left = null;
-            return;
-        }
-
-        if ((root.right != null) && root.right.data == key) {
-            root.right = null;
-            return;
-        }
-
-        if (key > root.data) {
-            delete(root.right, key);
+        if (root.data < key) {
+            root.right = delete(root.right, key);
+        } else if (root.data > key) {
+            root.left = delete(root.left, key);
         } else {
-            delete(root.left, key);
+            // Root data matches with key
+
+            // Case 1: If there is no leaf node
+            if (root.left == null && root.right == null) {
+                return null;
+            }
+
+            // Case 2: If there is a single node
+            // Left
+            if (root.right == null) {
+                return root.left;
+            }
+            // Right
+            if (root.left == null) {
+                return root.right;
+            }
+
+            // Case 3: If there are two child
+            // get the in order successor
+
+            Node successor = getSuccessor(root);
+            root.data = successor.data;
+            root.right = delete(root.right ,root.data);
+
         }
 
+        return root;
+    }
+
+    private Node getSuccessor(Node root) {
+        Node current = root.right;
+
+        while (current != null && current.left != null) {
+            current = current.left;
+        }
+
+        return current;
     }
 
     static class Node {
@@ -95,9 +121,9 @@ public class One_Binary_Search_Tree {
 
         tree.inOrderTraversal(root);
         System.out.println("end");
-
-        tree.delete(root, 6);
-
+//
+        tree.delete(root, 9);
+//
         tree.inOrderTraversal(root);
         System.out.println("end");
 
