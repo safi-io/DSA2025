@@ -1,6 +1,6 @@
 package SevenQueue.CircularQueue;
 
-public class customCircularQueue {
+public class CircularQueueArray {
 
     int count;
     int capacity;
@@ -8,7 +8,7 @@ public class customCircularQueue {
     int rear;
     int[] arr;
 
-    public customCircularQueue(int capacity) {
+    public CircularQueueArray(int capacity) {
         count = 0;
         front = rear = -1;
         this.capacity = capacity;
@@ -73,7 +73,7 @@ public class customCircularQueue {
 
 
     public static void main(String[] args) {
-        customCircularQueue queue = new customCircularQueue(5);
+        CircularQueueArray queue = new CircularQueueArray(5);
 
         queue.enqueue(10);
         queue.enqueue(20);
