@@ -39,6 +39,14 @@ public class callCenterManagement {
     void displayHistory() {
         history.display();
     }
+
+    public Queue getCalls() {
+        return calls;
+    }
+
+    public Stack getHistory() {
+        return history;
+    }
 }
 
 class Stack {
@@ -89,6 +97,10 @@ class Stack {
             this.push(popped.callID, popped.description);
         }
 
+    }
+
+    public Node peek() {
+        return head;
     }
 }
 
@@ -142,6 +154,9 @@ class Queue {
         }
     }
 
+    public Node peek() {
+        return head;
+    }
 }
 
 class Node {
@@ -152,5 +167,9 @@ class Node {
     public Node(int callID, String description) {
         this.callID = callID;
         this.description = description;
+    }
+
+    public int getCallID() {
+        return callID;
     }
 }
