@@ -3,7 +3,7 @@ package SevenQueue;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class One_Code {
+public class Queue_Interface {
     public static void main(String[] args) {
         Queue<Integer> que = new LinkedList<>();
         // First in, First Out
