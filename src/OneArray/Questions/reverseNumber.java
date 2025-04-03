@@ -1,6 +1,6 @@
 package OneArray.Questions;
 
-public class reverse {
+public class reverseNumber {
     public static void main(String[] args) {
         int x = 1234236467;
         int result = returnReverse(x);
