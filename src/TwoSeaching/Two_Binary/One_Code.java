@@ -1,5 +1,4 @@
 package TwoSeaching.Two_Binary;
-
 public class One_Code {
     public static void main(String[] args) {
         int[] array = {10,20,30,55,65,86};
