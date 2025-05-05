@@ -2,6 +2,9 @@ package EightTrees.AVL;
 
 // Time Complexity is O(log n)
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class AVL {
 
     public Node insert(Node root, int value) {
@@ -108,6 +111,45 @@ class AVL {
         // Print left subtree
         printTreeHelper(node.left, level + 1);
     }
+
+    public void printPath(Node root) {
+        ArrayList<ArrayList<Integer>> allPaths = new ArrayList<>();
+        PathHelper(root, new ArrayList<>(), allPaths);
+        System.out.println(allPaths);
+
+        // LeetCode question solved here
+
+        StringBuilder[] binaries = new StringBuilder[allPaths.size()];
+        for (int i = 0; i < allPaths.size(); i++) {
+            binaries[i] = new StringBuilder();
+        }
+
+
+        for (int i = 0; i < allPaths.size(); i++) {
+            for (int j = 0; j < allPaths.get(i).size(); j++) {
+                binaries[i].append(allPaths.get(i).get(j));
+            }
+        }
+        int toReturn = 0;
+        for (StringBuilder sb : binaries) {
+            toReturn += Integer.parseInt(String.valueOf(sb), 2);
+        }
+        System.out.println(toReturn);
+    }
+
+    private void PathHelper(Node root, ArrayList<Integer> currentPath, ArrayList<ArrayList<Integer>> allPaths) {
+        if (root == null) return;
+
+        currentPath.add(root.data);
+
+        if (root.right == null && root.left == null) {
+            allPaths.add(new ArrayList<>(currentPath)); // Make a copy
+        } else {
+            PathHelper(root.left, currentPath, allPaths);
+            PathHelper(root.right, currentPath, allPaths);
+        }
+        currentPath.removeLast();
+    }
 }
 
 class Node {
@@ -137,6 +179,7 @@ public class avlImplementation {
         root = avlTree.insert(root, 15);
         root = avlTree.insert(root, 40);
         root = avlTree.insert(root, 43);
-        avlTree.printTree(root);
+//        avlTree.printTree(root);
+        avlTree.printPath(root);
     }
 }
