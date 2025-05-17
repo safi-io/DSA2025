@@ -12,7 +12,7 @@ public class Swap {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void change(int[] arr, int index, int index2) {
+    private static void change(int[] arr, int index, int index2) {
         int temp = arr[index];
         arr[index] = arr[index2];
         arr[index2] = temp;
