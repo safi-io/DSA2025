@@ -12,26 +12,16 @@ public class UndirectedUnweightedGraphAdjacencyList { // O(V+E)
 
         @SuppressWarnings("unchecked") ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
-        BFS(graph, 1);
-
-        /*
-            1 --- 3
-          /       | \
-        0         |  5 --- 6
-         \        | /
-           2 ---  4
-         */
-
-        // 1 0 3, 2, 4 5, 6
+        DFS(graph, 0);
     }
 
-    public static void BFS(ArrayList<Edge>[] graph, int Source) {
+    public static void BFS(ArrayList<Edge>[] graph, int source) {
 
         // Add Immediate Neighbours
 
 
         Queue<Integer> qe = new LinkedList<>();
-        qe.add(Source);
+        qe.add(source);
 
         HashSet<Integer> visited = new HashSet<>(); // For Checking, If it's already in there!
 
@@ -48,6 +38,26 @@ public class UndirectedUnweightedGraphAdjacencyList { // O(V+E)
                 }
             }
         }
+    }
+
+    public static void DFS(ArrayList<Edge>[] graph, int source) { // O(V+E)
+        // Keep Going on 1st Neighbour
+        DFSHelper(graph, source, new HashSet<>());
+    }
+
+    private static void DFSHelper(ArrayList<Edge>[] graph, int current, HashSet<Integer> Visited) {
+        if (Visited.contains(current)) {
+            return;
+        }
+
+        System.out.print(current + " ");
+        Visited.add(current);
+
+        for (int i = 0; i < graph[current].size(); i++) {
+            Edge e = graph[current].get(i);
+            DFSHelper(graph, e.dest, Visited);
+        }
+
     }
 
     public static void printNeighbours(ArrayList<Edge>[] graph, int index) {
