@@ -1,6 +1,10 @@
 package ElevenGraphs.Creation;
 
+import ElevenGraphs.Traversals.Edge;
+
 import java.util.ArrayList;
+
+import static ElevenGraphs.Creation.PrintNeighboursUtil.printNeighbours;
 
 
 public class UndirectedWeightedGraphAdjacencyList {
@@ -15,14 +19,7 @@ public class UndirectedWeightedGraphAdjacencyList {
 
     }
 
-    public static void printNeighbours(ArrayList<Edge>[] graph, int index) {
-        for (int i = 0; i < graph[index].size(); i++) {
-            Edge e = graph[index].get(i);
-            System.out.println(i + 1 + " neighbour of " + index + " is: " + e.dest + ". Edge Weight: " + e.weight);
-        }
-    }
-
-    public static void createGraph(ArrayList<Edge>[] graph) {
+    private static void createGraph(ArrayList<Edge>[] graph) {
         for (int i = 0; i < graph.length; i++) {
             graph[i] = new ArrayList<>();
         }
@@ -40,15 +37,4 @@ public class UndirectedWeightedGraphAdjacencyList {
         graph[3].add(new Edge(3, 2, -1));
     }
 
-    static class Edge {
-        int src;
-        int dest;
-        int weight;
-
-        public Edge(int src, int dest, int weight) {
-            this.src = src;
-            this.dest = dest;
-            this.weight = weight;
-        }
-    }
 }
