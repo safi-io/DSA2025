@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/Creation/PrintNeighboursUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/Traversals/BFSTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/Traversals/DFSTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/Traversals/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA2025.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DSA2025.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Lab_One/TaskSchedulingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Lab_One/TaskSchedulingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Lab_Two/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Lab_Two/TestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignments/Theory_Three/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignments/Theory_Three/TestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ElevenGraphs/Creation/UndirectedUnweightedGraphAdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElevenGraphs/Creation/UndirectedUnweightedGraphAdjacencyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ElevenGraphs/Creation/UndirectedWeightedGraphAdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElevenGraphs/Creation/UndirectedWeightedGraphAdjacencyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FourStrings/Seven_PlaceHolders" beforeDir="false" />
+    <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="Dijkstra Algo Done &amp; Dusted!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThreeSorting/Five_Merge/One_Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreeSorting/Five_Merge/One_Code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThreeSorting/Two_Selection/One_Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreeSorting/Two_Selection/One_Code.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +50,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.DijkstraAlgo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.One_Code.executor&quot;: &quot;Run&quot;,
     &quot;Application.UndirectedUnweightedGraphAdjacencyList.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -94,11 +86,55 @@
       <option name="presentableId" value="Default" />
       <updated>1748419920131</updated>
       <workItem from="1748419921931" duration="1298000" />
-      <workItem from="1748583227023" duration="4398000" />
+      <workItem from="1748583227023" duration="6040000" />
+      <workItem from="1748607216829" duration="7084000" />
+      <workItem from="1748631582965" duration="5393000" />
     </task>
+    <task id="LOCAL-00001" summary="Graph Traversals!">
+      <option name="closed" value="true" />
+      <created>1748588977509</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748588977509</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Graph Creation and Algorithms!">
+      <option name="closed" value="true" />
+      <created>1748589032679</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748589032679</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Graph Creation and Algorithms!">
+      <option name="closed" value="true" />
+      <created>1748589050453</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748589050453</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Dijkstra Algo Done &amp; Dusted!">
+      <option name="closed" value="true" />
+      <created>1748618073288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748618073288</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Graph Traversals" />
+    <MESSAGE value="DFS done on Graphs!" />
+    <MESSAGE value="Graph Traversals!" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="Graph Creation and Algorithms!" />
+    <MESSAGE value="Dijkstra Algo Done &amp; Dusted!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra Algo Done &amp; Dusted!" />
   </component>
 </project>

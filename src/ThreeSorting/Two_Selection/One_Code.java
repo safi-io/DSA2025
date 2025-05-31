@@ -27,7 +27,7 @@ public class One_Code {
     private static int maxIndex(int[] arr, int start, int end) {
         int max = start;
 
-        for (int i = start; i < end; i++) {
+        for (int i = start; i <= end; i++) {
             if (arr[i] > arr[max]) {
                 max = i;
             }
