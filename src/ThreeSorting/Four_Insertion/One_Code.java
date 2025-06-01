@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class One_Code {
     public static void main(String[] args) {
-        int[] arr = {9, 7, 8, 1, 6, 3, 5, 4, 2};
+        int[] arr = {3,2,5,4};
         insertionSort(arr);
-        System.out.println(Arrays.toString(arr));
+            System.out.println(Arrays.toString(arr));
     }
 
     private static void insertionSort(int[] arr) {

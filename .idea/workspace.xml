@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="Dijkstra Algo Done &amp; Dusted!">
+      <change afterPath="$PROJECT_DIR$/src/Assignments/Theory_Four/MergeSortTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignments/Theory_Four/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignments/Theory_Four/TestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignments/Theory_Four/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreeSorting/Five_Merge/One_Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreeSorting/Five_Merge/One_Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreeSorting/Two_Selection/One_Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreeSorting/Two_Selection/One_Code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,27 +51,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DijkstraAlgo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.One_Code.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UndirectedUnweightedGraphAdjacencyList.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DijkstraAlgo.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.One_Code.executor": "Debug",
+    "Application.Runner.executor": "Run",
+    "Application.UndirectedUnweightedGraphAdjacencyList.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TestCases.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,7 +94,8 @@
       <workItem from="1748419921931" duration="1298000" />
       <workItem from="1748583227023" duration="6040000" />
       <workItem from="1748607216829" duration="7084000" />
-      <workItem from="1748631582965" duration="5393000" />
+      <workItem from="1748631582965" duration="11479000" />
+      <workItem from="1748778671827" duration="2413000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Traversals!">
       <option name="closed" value="true" />
@@ -136,5 +143,26 @@
     <MESSAGE value="Graph Creation and Algorithms!" />
     <MESSAGE value="Dijkstra Algo Done &amp; Dusted!" />
     <option name="LAST_COMMIT_MESSAGE" value="Dijkstra Algo Done &amp; Dusted!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
