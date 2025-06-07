@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="and DSA sem-subject Last Assignment is finished!">
-      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/Algorithms/BellmanFordAlgo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2025_12_09_pm_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_05_2025_12_09_pm__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/Algorithms/PrimsAlgo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +53,7 @@
     "Application.DijkstraAlgo.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.One_Code.executor": "Debug",
+    "Application.PrimsAlgo.executor": "Run",
     "Application.Runner.executor": "Run",
     "Application.UndirectedUnweightedGraphAdjacencyList.executor": "Run",
     "Database Script.console.sql.executor": "Run",
@@ -115,7 +113,8 @@
       <workItem from="1748839746252" duration="65000" />
       <workItem from="1749183548256" duration="1895000" />
       <workItem from="1749199066817" duration="27000" />
-      <workItem from="1749210242378" duration="2681000" />
+      <workItem from="1749210242378" duration="3500000" />
+      <workItem from="1749268678242" duration="3453000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Traversals!">
       <option name="closed" value="true" />
@@ -157,11 +156,30 @@
       <option name="project" value="LOCAL" />
       <updated>1748799052010</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="and DSA sem-subject Last Assignment is finished!">
+      <option name="closed" value="true" />
+      <created>1749231790100</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749231790100</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Graph Traversals" />
@@ -171,6 +189,7 @@
     <MESSAGE value="Graph Creation and Algorithms!" />
     <MESSAGE value="Dijkstra Algo Done &amp; Dusted!" />
     <MESSAGE value="Theory Assignment 3 Done" />
+    <MESSAGE value="BellmanFordAlgo done!" />
     <MESSAGE value="and DSA sem-subject Last Assignment is finished!" />
     <option name="LAST_COMMIT_MESSAGE" value="and DSA sem-subject Last Assignment is finished!" />
   </component>
