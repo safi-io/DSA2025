@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="and DSA sem-subject Last Assignment is finished!">
-      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/Algorithms/PrimsAlgo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/PathQuestions/AllPathsFromSrcToTrg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -65,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "graph-indepth",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Rana Safi Khan/Desktop/database4thSem",
     "node.js.detected.package.eslint": "true",
@@ -73,6 +78,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -114,7 +120,8 @@
       <workItem from="1749183548256" duration="1895000" />
       <workItem from="1749199066817" duration="27000" />
       <workItem from="1749210242378" duration="3500000" />
-      <workItem from="1749268678242" duration="3453000" />
+      <workItem from="1749268678242" duration="4160000" />
+      <workItem from="1749376941920" duration="1062000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Traversals!">
       <option name="closed" value="true" />
@@ -223,5 +230,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
