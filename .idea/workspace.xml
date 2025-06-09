@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="and DSA sem-subject Last Assignment is finished!">
-      <change afterPath="$PROJECT_DIR$/src/ElevenGraphs/PathQuestions/AllPathsFromSrcToTrg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElevenGraphs/Creation/UndirectedUnweightedGraphAdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElevenGraphs/Creation/UndirectedUnweightedGraphAdjacencyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElevenGraphs/PathQuestions/AllPathsFromSrcToTrg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElevenGraphs/PathQuestions/AllPathsFromSrcToTrg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AllPathsFromSrcToTrg.executor": "Run",
     "Application.BellmanFordAlgo.executor": "Run",
     "Application.DijkstraAlgo.executor": "Run",
     "Application.Main.executor": "Run",
