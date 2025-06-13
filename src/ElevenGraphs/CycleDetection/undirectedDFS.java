@@ -11,7 +11,7 @@ public class undirectedDFS {
         boolean[] isVisisted = new boolean[7];
 
         createGraph(graph);
-        System.out.println("Cycle: " + cycleDetection(graph, isVisisted));
+//        System.out.println("Cycle: " + cycleDetection(graph, isVisisted));
 
         System.out.println("Hello World");
     }
