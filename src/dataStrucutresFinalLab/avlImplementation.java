@@ -1,12 +1,6 @@
-package EightTrees.AVL;
-
-// Time Complexity is O(log n)
-
-import java.util.ArrayList;
-import java.util.Arrays;
+package dataStrucutresFinalLab;
 
 class AVL {
-
     public Node insert(Node root, int value) {
         // Root Doesn't Exist
         if (root == null) {
@@ -18,7 +12,7 @@ class AVL {
         } else if (value > root.data) {
             root.right = insert(root.right, value);
         } else {
-            return root; // No Duplicate Values
+            return root;
         }
 
         // Update Height
@@ -111,44 +105,23 @@ class AVL {
         // Print left subtree
         printTreeHelper(node.left, level + 1);
     }
+}
 
-//    public void printPath(Node root) {
-//        ArrayList<ArrayList<Integer>> allPaths = new ArrayList<>();
-//        PathHelper(root, new ArrayList<>(), allPaths);
-//        System.out.println(allPaths);
-//
-//        // LeetCode question solved here
-//
-//        StringBuilder[] binaries = new StringBuilder[allPaths.size()];
-//        for (int i = 0; i < allPaths.size(); i++) {
-//            binaries[i] = new StringBuilder();
-//        }
-//
-//
-//        for (int i = 0; i < allPaths.size(); i++) {
-//            for (int j = 0; j < allPaths.get(i).size(); j++) {
-//                binaries[i].append(allPaths.get(i).get(j));
-//            }
-//        }
-//        int toReturn = 0;
-//        for (StringBuilder sb : binaries) {
-//            toReturn += Integer.parseInt(String.valueOf(sb), 2);
-//        }
-//        System.out.println(toReturn);
-//    }
+public class avlImplementation {
+    public static void main(String[] args) {
+        AVL avlTree = new AVL();
 
-    private void PathHelper(Node root, ArrayList<Integer> currentPath, ArrayList<ArrayList<Integer>> allPaths) {
-        if (root == null) return;
-
-        currentPath.add(root.data);
-
-        if (root.right == null && root.left == null) {
-            allPaths.add(new ArrayList<>(currentPath)); // Make a copy
-        } else {
-            PathHelper(root.left, currentPath, allPaths);
-            PathHelper(root.right, currentPath, allPaths);
-        }
-        currentPath.removeLast();
+        Node root = new Node(30);
+        root = avlTree.insert(root, 35);
+        root = avlTree.insert(root, 1);
+        root = avlTree.insert(root, 9);
+        root = avlTree.insert(root, 11);
+        root = avlTree.insert(root, 12);
+        root = avlTree.insert(root, 14);
+        root = avlTree.insert(root, 15);
+        root = avlTree.insert(root, 40);
+        root = avlTree.insert(root, 43);
+        avlTree.printTree(root);
     }
 }
 
@@ -162,24 +135,5 @@ class Node {
         this.data = data;
         this.height = 1;
         left = right = null;
-    }
-}
-
-public class avlImplementation {
-    public static void main(String[] args) {
-        AVL avlTree = new AVL();
-
-        Node root = new Node(30);
-        root = avlTree.insert(root, 35);
-        root = avlTree.insert(root, 38);
-        root = avlTree.insert(root, 9);
-        root = avlTree.insert(root, 11);
-        root = avlTree.insert(root, 12);
-        root = avlTree.insert(root, 14);
-        root = avlTree.insert(root, 15);
-        root = avlTree.insert(root, 40);
-        root = avlTree.insert(root, 43);
-        avlTree.printTree(root);
-//        avlTree.printPath(root);
     }
 }
