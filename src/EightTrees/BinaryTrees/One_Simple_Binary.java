@@ -1,6 +1,8 @@
 package EightTrees.BinaryTrees;
 
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 class BinaryTree {
@@ -36,28 +38,68 @@ class BinaryTree {
 
     }
 
+    // Traversals
+
+    public void printLevelOrder() {
+        printLevelOrder(root);
+    }
+
     public void printInorder() {
         printInorder(root);
     }
 
-    public void printInorder(Node node)
-    {
-        if (node == null)
-            return;
+    public void printPreOrder() {
+        printPreOrder(root);
+    }
 
-        // First recur on left subtree
+    public void printPostOrder() {
+        printPostOrder(root);
+    }
+
+    private void printLevelOrder(Node root) {
+        Queue<Node> qe = new LinkedList<>();
+        qe.add(root);
+        while (!qe.isEmpty()) {
+            Node temp = qe.remove();
+            System.out.print(temp.value + " ");
+
+            if (temp.left != null) {
+                qe.add(temp.left);
+            }
+
+            if (temp.right != null) {
+                qe.add(temp.right);
+            }
+        }
+    }
+
+    private void printInorder(Node node) {
+        if (node == null) return;
+
         printInorder(node.left);
-
-        // Now deal with the node
         System.out.print(node.value + "->");
-
-        // Then recur on right subtree
         printInorder(node.right);
     }
 
+    private void printPreOrder(Node node) {
+        if (node == null) return;
+
+        System.out.print(node.value + "->");
+        printPreOrder(node.left);
+        printPreOrder(node.right);
+    }
+
+    private void printPostOrder(Node node) {
+        if (node == null) return;
+
+        printPostOrder(node.left);
+        printPostOrder(node.right);
+        System.out.print(node.value + "->");
+    }
+
     public int getSize(Node node) {
-        if(node==null) return 0;
-        return 1+getSize(node.left) + getSize(node.right);
+        if (node == null) return 0;
+        return 1 + getSize(node.left) + getSize(node.right);
     }
 
     public Node getRoot() {
@@ -79,7 +121,12 @@ public class One_Simple_Binary {
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.populate(new Scanner(System.in));
-        bt.printInorder();  // LNR (Left Node Right)
-//        System.out.println(bt.getSize( bt.getRoot() ));
+        bt.printLevelOrder();
+        System.out.println();
+        bt.printInorder();
+        System.out.println();
+        bt.printPreOrder();
+        System.out.println();
+        bt.printPostOrder();
     }
 }

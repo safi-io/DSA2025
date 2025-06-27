@@ -84,7 +84,7 @@ class BinaryTree {
         return root;
     }
 
-    private Node getSuccessor(Node root) {
+    private Node getSuccessor(Node root) { // Smallest Node in Right Sub-Tree
         Node current = root.right;
 
         while (current != null && current.left != null) {
@@ -133,16 +133,13 @@ public class One_Binary_Search_Tree {
             root = tree.insert(root, num);
         }
 
-//        tree.inOrderTraversal(root);
-//        System.out.println("end");
-
-        tree.printInRange(root, 4,10);
+        tree.inOrderTraversal(root);
         System.out.println("end");
 
 //        tree.delete(root, 9);
 //        tree.inOrderTraversal(root);
 //        System.out.println("end");
-
+//
 
 //        System.out.println("Enter to Search Something: ");
 //        Scanner sc = new Scanner(System.in);

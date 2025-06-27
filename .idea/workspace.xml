@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="Working upon cycles in Graph!">
-      <change afterPath="$PROJECT_DIR$/src/dataStrucutresFinalLab/avlImplementation.java" afterDir="false" />
+    <list default="true" id="e94afbff-e829-42a4-96a7-e199dd2f6e44" name="Changes" comment="DS Final Lab Exam!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EightTrees/AVL/avlImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightTrees/AVL/avlImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EightTrees/BinarySearchTrees/One_Binary_Search_Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightTrees/BinarySearchTrees/One_Binary_Search_Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EightTrees/BinaryTrees/One_Simple_Binary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightTrees/BinaryTrees/One_Simple_Binary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,10 @@
     "Application.DijkstraAlgo.executor": "Run",
     "Application.FriendCirclesDFS.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MinHeap.executor": "Run",
+    "Application.One_Binary_Search_Tree.executor": "Run",
     "Application.One_Code.executor": "Debug",
+    "Application.One_Simple_Binary.executor": "Run",
     "Application.PrimsAlgo.executor": "Run",
     "Application.Runner.executor": "Run",
     "Application.UndirectedUnweightedGraphAdjacencyList.executor": "Run",
@@ -77,7 +80,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Rana Safi Khan/Desktop/database4thSem",
+    "last_opened_file_path": "C:/Users/Rana Safi Khan/Desktop/DSA_PROJECT",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -132,6 +135,12 @@
       <workItem from="1749702274248" duration="15000" />
       <workItem from="1749804810964" duration="1205000" />
       <workItem from="1749886175860" duration="423000" />
+      <workItem from="1749897174093" duration="136000" />
+      <workItem from="1750179336338" duration="91000" />
+      <workItem from="1750179572754" duration="49000" />
+      <workItem from="1750869642931" duration="363000" />
+      <workItem from="1750875133422" duration="21009000" />
+      <workItem from="1750961696831" duration="6959000" />
     </task>
     <task id="LOCAL-00001" summary="Graph Traversals!">
       <option name="closed" value="true" />
@@ -197,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749804901185</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="DS Final Lab Exam!">
+      <option name="closed" value="true" />
+      <created>1749897239753</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749897239754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,26 +242,12 @@
     <MESSAGE value="BellmanFordAlgo done!" />
     <MESSAGE value="and DSA sem-subject Last Assignment is finished!" />
     <MESSAGE value="Working upon cycles in Graph!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working upon cycles in Graph!" />
+    <MESSAGE value="DS Final Lab Exam!" />
+    <option name="LAST_COMMIT_MESSAGE" value="DS Final Lab Exam!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Assignments/Lab_Four/DijkstraAlgorithm.java</url>
           <line>38</line>
@@ -254,6 +257,44 @@
           <url>file://$PROJECT_DIR$/src/Assignments/Lab_Four/Runner.java</url>
           <line>37</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/EightTrees/AVL/avlImplementation.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ThreeSorting/Four_Insertion/One_Code.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Assignments/Theory_One/JobSchedulingFarm.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/EightTrees/BinarySearchTrees/One_Binary_Search_Tree.java</url>
+          <line>86</line>
+          <properties class="EightTrees.BinarySearchTrees.BinaryTree" method="getSuccessor">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/EightTrees/BinarySearchTrees/One_Binary_Search_Tree.java</url>
+          <line>47</line>
+          <properties class="EightTrees.BinarySearchTrees.BinaryTree" method="delete">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
